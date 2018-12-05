@@ -1,0 +1,6 @@
+server:
+  port: 8863
+
+spring:
+  application:
+    name: servicea

@@ -1,0 +1,10 @@
+server:
+  port: 8862
+
+spring:
+  application:
+    name: serviceb
+
+feign:
+  hystrix:
+    enabled: true
