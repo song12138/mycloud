@@ -1,6 +1,6 @@
-server:
-  port: 8863
-
 spring:
   application:
     name: servicea
+  cloud:
+    config:
+      uri: http://localhost:8888

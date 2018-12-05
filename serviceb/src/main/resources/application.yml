@@ -1,9 +1,9 @@
-server:
-  port: 8862
-
 spring:
   application:
     name: serviceb
+  cloud:
+    config:
+      uri: http://localhost:8888
 
 feign:
   hystrix:

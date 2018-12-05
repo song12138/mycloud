@@ -1,8 +1,9 @@
-server:
-  port: 8864
 
 
 spring:
   application:
     name: servicec
+  cloud:
+    config:
+      uri: http://localhost:8888
 

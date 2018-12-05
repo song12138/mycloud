@@ -7,7 +7,8 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: git://github.com/song12138/mycloud.git
           password: song12138
           username: songxiangfu12345
+          search-paths: config-repo,config-repo/{application}
 

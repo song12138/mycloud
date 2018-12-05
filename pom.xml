@@ -48,10 +48,12 @@
     </build>
 
     <modules>
+        <module>config-server</module>
         <module>eureka</module>
         <module>servicea</module>
         <module>servicea2</module>
         <module>serviceb</module>
+        <module>servicec</module>
     </modules>
 
 
