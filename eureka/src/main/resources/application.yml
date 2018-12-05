@@ -2,14 +2,22 @@
 spring:
   application:
     name: eureka-server
-  cloud:
-    config:
-      uri: http://localhost:8888
-#server:
-#  port: 8761
-#eureka:
-#  client:
-#    fetch-registry: false
-#    register-with-eureka: false
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
+  profiles:
+    active: server1
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # 是否从eureka上获取注册信息
+    fetch-registry: false
+    # 表示是否注册自身到eureka服务器
+    register-with-eureka: false
 #    service-url:
-#      defaultZone: http://localhost:${server.port}/${spring.application.name}
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
+

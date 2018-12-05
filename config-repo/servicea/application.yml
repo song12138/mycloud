@@ -1,2 +1,9 @@
 server:
   port: 8861
+
+spring:
+  application:
+    name: servicea
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
